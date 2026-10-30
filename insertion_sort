@@ -1,0 +1,13 @@
+skaitli = [6,9,2,0,18,4,11]
+
+for i in range(1, len(skaitli)):
+    current = skaitli[i]
+    j = i -1
+
+    while j >= 0 and skaitli[j] > current:
+        skaitli[j+1] = skaitli[j]
+        j = j - 1
+
+    skaitli[j+1] = current
+
+    print(skaitli)

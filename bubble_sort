@@ -1,0 +1,15 @@
+skaitli = [6,9,2,0,4,11]
+
+for i in range(len(skaitli) - 1):
+    for j in range(len(skaitli) - 1):
+        
+        if skaitli[j] > skaitli[j + 1]:
+            konteineris = skaitli[j]
+            skaitli[j] = skaitli[j + 1]
+            skaitli[j + 1] = konteineris
+    print(skaitli)        
+
+        
+
+
+#sakartots: 0 2 4 6 9

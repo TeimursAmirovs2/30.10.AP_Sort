@@ -1,0 +1,14 @@
+skaitli = [6,9,2,0,4,11]
+
+for i in range(len(skaitli)):
+    mazakais = i
+
+    for j in range(i+1, len(skaitli)):
+        if skaitli[j] < skaitli[mazakais]:
+            mazakais = j
+
+    temp = skaitli[i]
+    skaitli[i] = skaitli[mazakais]
+    skaitli[mazakais] = temp
+
+    print(skaitli)
